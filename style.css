@@ -1,0 +1,29 @@
+header {
+  color: purple;
+  background-color: black;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  text-align: center;
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: x-large;
+}
+body {
+  background-color: bisque;
+  background-image: url("https://easydrawingguides.com/wp-content/uploads/2018/10/Pears-10.png");
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: medium;
+}
+button {
+  color: aliceblue;
+  background-color: gray;
+}
+input {
+
+}
+
+
