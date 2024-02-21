@@ -25,7 +25,7 @@ function popList() {
       const deleteButton = document.createElement('button');
       deleteButton.textContent = 'Delete';
       deleteButton.className = 'deleteButtonClass'
-      deleteButton.addEventListener('click', () => removeToDoItem(index));
+      deleteButton.addEventListener('mousedown', () => removeToDoItem(index));
       li.appendChild(deleteButton);
       todoList.appendChild(li);
   });
