@@ -51,6 +51,8 @@ const toDoListClick = () => {
 function removeToDoItem(index) {
   toDo.splice(index, 1);
   popList();
+  let audio = new Audio('https://media.merriam-webster.com/audio/prons/en/us/mp3/p/yeet1.mp3')
+  audio.play()
 }
 
 
@@ -58,6 +60,8 @@ function removeToDoItem(index) {
 function toggleCompleted(index) {
   toDo[index].completed = !toDo[index].completed;
   popList();
+  let audio = new Audio('https://media.merriam-webster.com/audio/prons/en/us/mp3/w/woohoo01.mp3')
+  audio.play()
 }
 
 //Make a function that deletes list items
