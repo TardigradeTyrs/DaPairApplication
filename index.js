@@ -21,6 +21,12 @@ function popList() {
           li.style.textDecoration = 'line-through';
       }
       li.addEventListener('click', () => toggleCompleted(index));
+      //add delete button
+      const deleteButton = document.createElement('button');
+      deleteButton.textContent = 'Delete';
+      deleteButton.className = 'deleteButtonClass'
+      deleteButton.addEventListener('click', () => removeToDoItem(index));
+      li.appendChild(deleteButton);
       todoList.appendChild(li);
   });
 }
@@ -36,8 +42,16 @@ const toDoListClick = () => {
     };
     document.getElementById('todoInput').value = ""
     popList()
+    let audio = new Audio('https://media.merriam-webster.com/audio/prons/en/us/mp3/p/pear0001.mp3')
+    audio.play()
   }
   btnPush.addEventListener("click", toDoListClick);
+
+//delete button function
+function removeToDoItem(index) {
+  toDo.splice(index, 1);
+  popList();
+}
 
 
 //Make a function that crosses out list items on click

@@ -17,13 +17,39 @@ body {
   background-image: url("https://easydrawingguides.com/wp-content/uploads/2018/10/Pears-10.png");
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: medium;
+  text-align: center;
 }
 button {
   color: aliceblue;
   background-color: gray;
+  border: none;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 20px;
 }
+.deleteButtonClass {
+  font-size: 30px;
+  margin-bottom: 10px;
+  transform: translateX(425px);
+}
+
+
 input {
+  font-size: 40px;
+  width: 600px;
+  text-align: center;
+}
+ul {
+  background-color: rgba(255, 255, 255, .6);
+  opacity: 1;
+  font-size: 34px;
+  list-style: none;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 0;
 
 }
-
+li {
+  text-align: center;
+}
 
